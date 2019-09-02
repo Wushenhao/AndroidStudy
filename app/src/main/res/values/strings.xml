@@ -1,4 +1,6 @@
 <resources>
     <string name="app_name">MyFirstApplication</string>
     <string name="HelloWorld">我喜欢Android开发</string>
+    <string name="hello_world">你好世界</string>
+    <string name="hello_world2">你好2人世界</string>
 </resources>
