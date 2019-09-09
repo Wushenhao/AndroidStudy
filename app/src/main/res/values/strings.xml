@@ -3,4 +3,6 @@
     <string name="HelloWorld">我喜欢Android开发</string>
     <string name="hello_world">你好Android</string>
     <string name="hello_world2">你好2人世界</string>
+    <string name="hello_world_cn">你好，世界！</string>
+    <string name="hello_world_en">Hello World!</string>
 </resources>
