@@ -22,11 +22,11 @@ public class EditTextActivity extends AppCompatActivity {
         buttonChange = (Button)this.findViewById(R.id.button_change_language);  //一定要转换为Button，不然OnClickListener不会生效
 
         //添加点击事件
-        buttonChange.setOnClickListener(new MyOnclicklistener());
+        buttonChange.setOnClickListener(new MyOnClickListener());
 
     }
 
-    private class MyOnclicklistener implements View.OnClickListener {
+    private class MyOnClickListener implements View.OnClickListener {
 
         @Override
         public void onClick(View view) {
