@@ -8,15 +8,14 @@ import android.os.Bundle;
 public class TextView extends AppCompatActivity {
 
 
-    private android.widget.TextView textViewHelloWorld; //定义TextView控件
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_text_view_main);
 
         //通过id找到TextView控件对象;findViewById()从已有的xml布局文件中提取已经写好的View对象
-        textViewHelloWorld = findViewById(R.id.text_view_hello_world); //在actibity_main中通过@+id在R.java文件中自动生成了int型变量R.id.text_view_hello_world,即View对象的id
+        //定义TextView控件
+        android.widget.TextView textViewHelloWorld = findViewById(R.id.text_view_hello_world); //在actibity_main中通过@+id在R.java文件中自动生成了int型变量R.id.text_view_hello_world,即View对象的id
         textViewHelloWorld.setText("你好Android！");
 
         //通过资源id获得字符串
@@ -28,6 +27,6 @@ public class TextView extends AppCompatActivity {
         int helloWorldId = context.getResources().getIdentifier(resName, "string", context.getPackageName());
         textViewHelloWorld.setText(this.getString(helloWorldId));
 
-
     }
+
 }

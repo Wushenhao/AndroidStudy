@@ -1,12 +1,12 @@
 package com.example.myapplication;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-import static android.view.View.*;
+import androidx.appcompat.app.AppCompatActivity;
+
+import static android.view.View.OnClickListener;
 
 public class ButtonMainActivity extends AppCompatActivity {
 
@@ -17,9 +17,8 @@ public class ButtonMainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_button_main);
 
-        buttonCn=this.findViewById(R.id.button_cn);
-        buttonEn=this.findViewById(R.id.button_en);
-
+        buttonCn=(Button)this.findViewById(R.id.button_cn);
+        buttonEn=(Button)this.findViewById(R.id.button_en);
         textViewHelloWorld=this.findViewById(R.id.helloworld_cnen);
 
         buttonCn.setOnClickListener(new View.OnClickListener() {
